@@ -1,0 +1,16 @@
+<?php
+class student{
+
+    public $name;
+    public function __construct($name)
+    {
+        $this->name =$name;
+    }
+
+}
+$studobj = new student("ihsan");
+$s = clone $studobj;
+$s->name = "naveed";
+var_dump($studobj);
+echo "<br>";
+var_dump($s);
